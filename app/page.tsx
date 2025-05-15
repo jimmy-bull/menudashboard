@@ -105,7 +105,7 @@ export default function Dashboard() {
   // State for menu items
   const [menus, setMenus] = useState<any>();
 
-  const [base_uri, set_base_uri] = useState("http://127.0.0.1:8000");
+  const [base_uri, set_base_uri] = useState(process.env.NEXT_PUBLIC_BASE_URI);
   // State for sous-menu items
   const [sousMenus, setSousMenus] = useState<SousMenu[]>([]);
   useEffect(() => {
