@@ -118,7 +118,7 @@ export default function WeeklyMenuSection({
                           Végétarien
                         </span>
                       )}
-                      {item.sans_gluten && (
+                      {item.epice && (
                         <span className="px-2 inline-flex text-xs font-semibold rounded-full bg-red-100 text-red-800">
                           Sans gluten
                         </span>

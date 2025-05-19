@@ -37,7 +37,7 @@ export interface WeeklyItem {
   prix: number;
   categorie: string;
   vegetarien: boolean;
-  sans_gluten: boolean;
+  epice: boolean;
 }
 
 export type FormValues = {
