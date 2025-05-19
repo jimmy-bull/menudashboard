@@ -109,7 +109,7 @@ export default function WeeklyMenuSection({
                     {item.categorie === "entree" ? "Entrée" : "Plat principal"}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                    {item.prix} €
+                    {item.prix} CHF
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                     <div className="flex gap-2">
@@ -118,9 +118,9 @@ export default function WeeklyMenuSection({
                           Végétarien
                         </span>
                       )}
-                      {item.epice && (
+                      {item.sans_gluten && (
                         <span className="px-2 inline-flex text-xs font-semibold rounded-full bg-red-100 text-red-800">
-                          Épicé
+                          Sans gluten
                         </span>
                       )}
                     </div>

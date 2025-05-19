@@ -208,7 +208,7 @@ export default function Dashboard() {
     prix: 0,
     categorie: "entree",
     vegetarien: false,
-    epice: false,
+    sans_gluten: false,
   });
 
   // State for search
@@ -535,7 +535,7 @@ export default function Dashboard() {
       prix: values.prix,
       categorie: values.categorie,
       vegetarien: values.vegetarien,
-      epice: values.epice,
+      epice: values.sans_gluten,
     };
     setIsAddingWeeklyMenuItem(true);
     try {
@@ -561,7 +561,7 @@ export default function Dashboard() {
           prix: 0,
           categorie: "entree",
           vegetarien: false,
-          epice: false,
+          sans_gluten: false,
         });
       } else {
         alert(
@@ -698,7 +698,7 @@ export default function Dashboard() {
       prix: item.prix,
       categorie: item.categorie,
       vegetarien: item.vegetarien,
-      epice: item.epice,
+      sans_gluten: item.sans_gluten,
     });
     setShowEditWeeklyMenuItemModal(true);
   };
@@ -809,7 +809,7 @@ export default function Dashboard() {
       .positive("Le prix doit être positif"),
     categorie: yup.string().required("La catégorie est requise"),
     vegetarien: yup.boolean().required(),
-    epice: yup.boolean().required(),
+    sans_gluten: yup.boolean().required(),
   });
 
   return (
@@ -1773,7 +1773,7 @@ export default function Dashboard() {
                               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
                               checked={values.vegetarien}
                               onChange={() =>
-                                setFieldValue("vegetarien", !values.vegetarien)
+                                setFieldValue("Végétarien", !values.vegetarien)
                               }
                             />
                             <label
@@ -1790,23 +1790,23 @@ export default function Dashboard() {
                           </div>
                           <div className="mb-4 flex items-center">
                             <Field
-                              id="weekly-menu-epice"
-                              name="epice"
+                              id="weekly-menu-sans-gluten"
+                              name="sans_gluten"
                               type="checkbox"
                               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                              checked={values.epice}
+                              checked={values.sans_gluten}
                               onChange={() =>
-                                setFieldValue("epice", !values.epice)
+                                setFieldValue("Sans gluten", !values.sans_gluten)
                               }
                             />
                             <label
-                              htmlFor="weekly-menu-epice"
+                              htmlFor="weekly-menu-sans-gluten"
                               className="ml-2 block text-sm text-gray-900"
                             >
-                              Épicé
+                              Sans gluten
                             </label>
                             <ErrorMessage
-                              name="epice"
+                              name="sans_gluten"
                               component="p"
                               className="text-sm text-red-600 ml-2"
                             />
@@ -1966,18 +1966,18 @@ export default function Dashboard() {
                       </div>
                       <div className="mb-4 flex items-center">
                         <input
-                          id="edit-weekly-menu-epice"
-                          name="epice"
+                          id="edit-weekly-menu-sans-gluten"
+                          name="sans_gluten"
                           type="checkbox"
                           className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                          checked={weeklyMenuItemForm.epice}
+                          checked={weeklyMenuItemForm.sans_gluten}
                           onChange={handleWeeklyMenuItemFormChange}
                         />
                         <label
-                          htmlFor="edit-weekly-menu-epice"
+                          htmlFor="edit-weekly-menu-sans-gluten"
                           className="ml-2 block text-sm text-gray-900"
                         >
-                          Épicé
+                          Sans gluten
                         </label>
                       </div>
                     </div>
