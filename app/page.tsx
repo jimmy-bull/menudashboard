@@ -1766,12 +1766,12 @@ export default function Dashboard() {
                             />
                           </div>
                           <div className="mb-4 flex items-center">
-                            <Field
+                            <input
                               id="weekly-menu-vegetarien"
                               name="vegetarien"
                               type="checkbox"
                               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                              checked={values.vegetarien}
+                              // checked={values.vegetarien}
                               onChange={() =>
                                 setFieldValue("Végétarien", !values.vegetarien)
                               }
@@ -1789,12 +1789,12 @@ export default function Dashboard() {
                             />
                           </div>
                           <div className="mb-4 flex items-center">
-                            <Field
+                            <input
                               id="weekly-menu-sans-gluten"
                               name="sans_gluten"
                               type="checkbox"
                               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                              checked={values.sans_gluten}
+                              // checked={values.sans_gluten}
                               onChange={() =>
                                 setFieldValue("Sans gluten", !values.sans_gluten)
                               }
@@ -1954,7 +1954,7 @@ export default function Dashboard() {
                           name="vegetarien"
                           type="checkbox"
                           className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                          checked={weeklyMenuItemForm.vegetarien}
+                          // checked={weeklyMenuItemForm.vegetarien}
                           onChange={handleWeeklyMenuItemFormChange}
                         />
                         <label
