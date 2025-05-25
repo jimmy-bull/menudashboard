@@ -1771,7 +1771,7 @@ export default function Dashboard() {
                               name="vegetarien"
                               type="checkbox"
                               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                              // checked={values.vegetarien}
+                             
                               onChange={() =>
                                 setFieldValue("Végétarien", !values.vegetarien)
                               }
@@ -1794,7 +1794,7 @@ export default function Dashboard() {
                               name="sans_gluten"
                               type="checkbox"
                               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                              // checked={values.sans_gluten}
+                              
                               onChange={() =>
                                 setFieldValue("Sans gluten", !values.sans_gluten)
                               }
