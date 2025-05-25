@@ -1766,15 +1766,15 @@ export default function Dashboard() {
                             />
                           </div>
                           <div className="mb-4 flex items-center">
-                            <input
+                            <Field
                               id="weekly-menu-vegetarien"
                               name="vegetarien"
                               type="checkbox"
                               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
                              
-                              onChange={() =>
-                                setFieldValue("Végétarien", !values.vegetarien)
-                              }
+                              // onChange={() =>
+                              //   setFieldValue("Végétarien", !values.vegetarien)
+                              // }
                             />
                             <label
                               htmlFor="weekly-menu-vegetarien"
@@ -1789,15 +1789,15 @@ export default function Dashboard() {
                             />
                           </div>
                           <div className="mb-4 flex items-center">
-                            <input
+                            <Field
                               id="weekly-menu-sans-gluten"
                               name="sans_gluten"
                               type="checkbox"
                               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
                               
-                              onChange={() =>
-                                setFieldValue("Sans gluten", !values.sans_gluten)
-                              }
+                              // onChange={() =>
+                              //   setFieldValue("Sans gluten", !values.sans_gluten)
+                              // }
                             />
                             <label
                               htmlFor="weekly-menu-sans-gluten"
