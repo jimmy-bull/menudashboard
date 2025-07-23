@@ -959,15 +959,7 @@ export default function Dashboard() {
 
           {/* Weekly Menu Tab */}
           {activeTab === "weekly-menu" && (
-            <WeeklyMenuSection
-              weeklyMenuItems={weeklyMenuItems}
-              searchTerm={weeklyMenuSearchTerm}
-              setSearchTerm={setWeeklyMenuSearchTerm}
-              onAddOpen={() => setShowAddWeeklyMenuItemModal(true)}
-              onEditOpen={openEditWeeklyMenuItemModal}
-              onDeleteOpen={openDeleteWeeklyMenuItemModal}
-              onDeleteAll={() => setShowConfirmDeleteAllModal(true)}
-            />
+            <WeeklyMenuSection />
           )}
         </div>
       </div>
